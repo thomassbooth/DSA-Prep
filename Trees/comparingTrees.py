@@ -2,12 +2,13 @@ from binaryTree import Node, BinaryTree
 
 def compare_dfs(a: Node | None, b: Node | None) -> bool:
 
+    #structural check
     if a == None and b == None: return True
-    #check if both nodes are None
+    
+    #structural check
     if a == None or b == None: return False
     
-    #check if they are not the same
-    print(a.val, b.val)
+    #value check
     if a.val != b.val: return False
     
     #recurse
